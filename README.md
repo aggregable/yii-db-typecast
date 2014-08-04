@@ -29,3 +29,16 @@ Component configuration
 		],
 		...
 	],
+
+ActiveRecord models configuration
+------------
+	/**
+	 * @inheritdoc
+	 */
+	public function behaviors() {
+		return array_merge(parent::behaviors(), [
+			'typecast' => [
+				'class' => '\aggregable\yiidbtypecast\components\ActiveRecordTypecastBehavior',
+			]
+		]);
+	}
