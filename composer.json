@@ -1,0 +1,23 @@
+{
+	"name": "aggregable/yii-db-typecast",
+	"description": "Improve Yii DB typecast",
+	"keywords": ["yii", "db", "typecast"],
+	"type": "yii-component",
+	"minimum-stability": "dev",
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Roman Royik",
+			"email": "r.royik@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"yiisoft/yii": "1.1.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"aggregable\\yiidbtypecast\\": ""
+		}
+	}
+}
