@@ -11,7 +11,7 @@ class MysqlColumnSchema extends CMysqlColumnSchema {
 	 * @inheritdoc
 	 */
 	protected function extractType($dbType) {
-		if (preg_match('/(int|bit|tinyint|smallint|mediumint)/', $dbType)) {
+		if (preg_match('/^(int|bit|tinyint|smallint|mediumint)/', $dbType)) {
 			$this->type = 'integer';
 		} else {
 			parent::extractType($dbType);
