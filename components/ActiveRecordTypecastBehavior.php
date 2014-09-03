@@ -11,6 +11,9 @@ use \CActiveRecordBehavior,
  * @method \CActiveRecord getOwner()
  */
 class ActiveRecordTypecastBehavior extends CActiveRecordBehavior {
+	/**
+	 * @inheritdoc
+	 */
 	public function afterFind($event) {
 		$md = $this->getOwner()->getMetaData();
 		foreach ($this->getOwner()->getAttributes() as $name => $attribute) {
