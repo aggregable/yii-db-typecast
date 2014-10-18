@@ -1,9 +1,9 @@
 <?php
 namespace aggregable\yiidbtypecast\components;
 
-use \CActiveRecordBehavior,
-    \CDbColumnSchema,
-    \CActiveRecord;
+use \CActiveRecordBehavior;
+use \CDbColumnSchema;
+use \CActiveRecord;
 
 /**
  * Class ActiveRecordTypecastBehavior

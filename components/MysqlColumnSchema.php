@@ -2,6 +2,7 @@
 namespace aggregable\yiidbtypecast\components;
 
 use \CMysqlColumnSchema;
+use \CDbExpression;
 
 /**
  * Class MysqlColumnSchema
@@ -27,6 +28,12 @@ class MysqlColumnSchema extends CMysqlColumnSchema
      */
     public function typecast($value)
     {
+        if (gettype($value) === $this->type || $value === null || $value instanceof CDbExpression) {
+            return $value;
+        }
+        if ($value === '' && $this->allowNull) {
+            return $this->type === 'string' ? '' : null;
+        }
         if ($this->type === 'double') {
             return (float)$value;
         } else {
