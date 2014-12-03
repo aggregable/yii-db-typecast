@@ -4,9 +4,9 @@ namespace aggregable\yiidbtypecast\components;
 use \CMysqlSchema;
 
 /**
- * Class MysqlScheme
+ * Class MySqlSchema
  */
-class MysqlScheme extends CMySqlSchema
+class MySqlSchema extends CMySqlSchema
 {
     /**
      * @inheritdoc

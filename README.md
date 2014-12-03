@@ -25,7 +25,7 @@ Component configuration
 
 	'components' => [
 		'db' => [
-			'driverMap' => ['mysql' => '\aggregable\yiidbtypecast\components\MysqlScheme'],
+			'driverMap' => ['mysql' => '\aggregable\yiidbtypecast\components\MySqlSchema'],
 		],
 		...
 	],
