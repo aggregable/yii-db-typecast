@@ -29,10 +29,10 @@ class MySqlSchema extends CMySqlSchema
     }
 
     /**
-     * @return MysqlColumnSchema
+     * @return MySqlColumnSchema
      */
     protected function createColumnScheme()
     {
-        return new MysqlColumnSchema();
+        return new MySqlColumnSchema();
     }
 }

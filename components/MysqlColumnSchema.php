@@ -5,9 +5,9 @@ use \CMysqlColumnSchema;
 use \CDbExpression;
 
 /**
- * Class MysqlColumnSchema
+ * Class MySqlColumnSchema
  */
-class MysqlColumnSchema extends CMysqlColumnSchema
+class MySqlColumnSchema extends CMysqlColumnSchema
 {
     /**
      * @inheritdoc
